@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		//05
+		int codigo, quantidade;
+		double total;
+		codigo = sc.nextInt();
+		quantidade = sc.nextInt();
+		
+		if (codigo == 1) {
+			total = quantidade * 4.0;
+			System.out.printf("Total: R$ %.2f%n", total);
+			
+		}
+		else if (codigo == 2) {
+			total = quantidade * 4.50;
+			System.out.printf("Total: R$ %.2f%n", total);
+			
+		}
+		else if (codigo == 3) {
+			total = quantidade * 5.0;
+			System.out.printf("Total: R$ %.2f%n", total);
+
+		}
+		else if (codigo == 4) {
+			total = quantidade * 2.0;
+			System.out.printf("Total: R$ %.2f%n", total);
+			
+		}
+		else if (codigo == 4) {
+			total = quantidade * 1.5;
+			System.out.printf("Total: R$ %.2f%n", total);
+      }
+   }
+}
